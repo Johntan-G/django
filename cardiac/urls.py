@@ -21,4 +21,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^health/$',physical_view.health,name = 'health'),
     url(r'^psychology/$',psychological_view.psychology,name = 'psychology'),
+    url(r'^project/$',physical_view.project,name = 'project'),`
 ]
