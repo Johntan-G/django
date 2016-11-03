@@ -1,0 +1,50 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        {% block title %}
+        {% endblock %}
+    </head>
+    
+
+    <body>
+        <div class="header">
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="pure-button" href="{% url 'psychology' %}">国民体质与健康数据库中国人心理状况数据库</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="pure-button" href="{% url 'health' %}">国民体质与健康数据库</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+	
+
+        <div class="sub_header">
+    <nav class="nav">
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a class="pure-button" href="{% url %}">项目介绍</a>
+            </li>
+            <li class="nav-item">
+                <a class="pure-button" href="{% url %}">生理指标分析</a>
+            </li>
+	    <li class="nav-item">
+                <a class="pure-button" href="{% url %}">用户自测</a
+            </li>
+	    <li class="nav-item">
+                <a class="pure-button" href="{% url %}">体检结果查询</a
+            </li>
+	    <li class="nav-item">
+                <a class="pure-button" href="{% url %}">相关性统计</a
+            </li>
+        </ul>
+    </nav>
+</div>
+        {% block body %}
+        {% endblock %}
+
+    </body>
+</html>
+
